@@ -1,11 +1,11 @@
 body {
     text-align: center;
-    background-color: #ffe6f0;
+    background-color: #e7ffe6;
     font-family: "Arial", sans-serif;
 }
 
 h1{
-    color:#e91e63;
+    color:#e91ec7;
 }
 
 button{
@@ -14,12 +14,12 @@ button{
     background-color:#e91e63;
     color:#ffffff;
     border:none;
-    border-radius:5px;
+    border-radius: 5px;
     cursor:pointer;
 }
 
-btton:hover{
-    background-color:aliceblue
+button:hover{
+  background-color: #c2185b;
 }
 
 .result{
