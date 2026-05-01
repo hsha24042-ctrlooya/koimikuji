@@ -14,7 +14,15 @@ const result = document.getElementById("result");
 button.addEventListener("click",function () {
     //ランダムな数字を作る
     const randomNumber = Math.floor(Math.random() * fortunes.lenght);
-   
+    const resultText = fortumes[(randomNumber)];
+
     //結果を表示
     result.textContent = fortunes[(randomNumber)];
+
+    if (resultText.includes("大吉")) {
+        result.style.color = "red";
+        
+    } else if (resultText.includes("中吉")) {
+        result.style.color = "green";
+    }
 });
