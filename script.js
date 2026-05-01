@@ -7,11 +7,11 @@ const fortunes = [
 ];
 
 //ボタンと表示エリアを取得
-const button=document.getElementById("omikuji-bt");
-const result=document.getElementById("result");
+const button = document.getElementById("omikuji-bt");
+const result = document.getElementById("result");
 
 //ボタンがクリックされた時の処理
-button.addEventListener("click",function() {
+button.addEventListener("click",function () {
     //ランダムな数字を作る
     const randomNumber = Math.floor(Math.random() * fortunes.lenght);
    
