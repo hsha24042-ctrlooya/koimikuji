@@ -8,21 +8,27 @@ const fortunes = [
 
 //ボタンと表示エリアを取得
 const button = document.getElementById("omikuji-bt");
+const omikujiImg = document.getElementById("omikuji-img");
 const result = document.getElementById("result");
+const advice = document.getElementById("advice");
+
+omikujiImg.innerHTML ="<img src='happy.png'>";
 
 //ボタンがクリックされた時の処理
 button.addEventListener("click",function () {
     //ランダムな数字を作る
-    const randomNumber = Math.floor(Math.random() * fortunes.lenght);
-    const resultText = fortumes[(randomNumber)];
+    const randomNumber = Math.floor(Math.random() * fortunes.length);
+    const resultText = fortunes[(randomNumber)];
 
     //結果を表示
     result.textContent = fortunes[(randomNumber)];
 
     if (resultText.includes("大吉")) {
         result.style.color = "red";
+        advice.textContent = "今日は積極的に行動しよう";
         
     } else if (resultText.includes("中吉")) {
         result.style.color = "green";
+        advice.textContent="";
     }
 });
